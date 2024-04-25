@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="logo" href="/img/favicon.ico" />
+    <title>Future Solar Power Plant</title>
+    <header class="header">
+      <div class="nav-bar">
+        <div class="logo">
+          <button class="menu-toggle">&#9776;</button>
+          <a href="#about"><img src="/img/logo.png" alt="Logo" /></a>
+        </div>
+        <nav class="nav-links">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#modules">Модули</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#advantages">Преимущества</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#research">Исследования</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mvp">MVP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Достижения</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="cta-buttons">
+          <button id="contactButton" class="contact">Связаться с нами</button>
+          <button id="orderButton" class="order_link">Заказать</button>
+        </div>
+      </div>
+    </header>
+  </head>
+  <body>
+    <div class="grad1" id="about">
+      <div class="content">
+        <h1>Future Solar Power Plant</h1>
+        <p>
+          новый вид системы производства электроэнергии через использование
+          солнечных панелей
+        </p>
+      </div>
+    </div>
+    <div class="background-main">
+      <div class="content">
+        <div class="model">
+          <h1>Излучайте солнечное<br />будущее вместе с нами !</h1>
+          <img class="sun" src="/img/sun.png" />
+        </div>
+        <div class="model">
+          <p>
+            Эффективная добыча солнечной энергии через нашу платформу - ключ к
+            устойчивому развитию.
+          </p>
+          <img src="/img/3d_model.png" class="model_3d" />
+        </div>
+      </div>
+      <div class="video-container">
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/eZ5qVrbYCh0?si=ze8bLJRwXie9hJRG&amp;controls=0&amp;modestbranding=1&amp;rel=0&amp;showinfo=0"
+          title="FSPP"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="btn_order">
+        <button
+          class="order_link"
+          onclick="window.location.href='#order_link'"
+          style="display: flex"
+        >
+          Заказать продукт
+        </button>
+      </div>
+    </div>
+    <div class="modules" id="modules">
+      <div class="block-head">
+        <h1 class="block-head-h1">Модульные платформы</h1>
+      </div>
+      <div class="table-container">
+        <table cellspacing="0" cellpadding="0" border="0" class="table1">
+          <tbody>
+            <tr>
+              <td>
+                <div>
+                  <img
+                    src="/img/reflect.png"
+                    alt="Reflection"
+                    class="t_image"
+                  />
+                  <h2 class="table-h">Система плавучей платформы</h2>
+                  <p class="table-text">
+                    Солнечная панель размещается на поверхности воды и
+                    закрепляется специальным якорем так чтобы вода отражала
+                    солнечный свет и вырабатывает на 15% больше.
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <img src="/img/tracker2.png" alt="Cleaning" class="t_image" />
+                  <h2 class="table-h">Умная система слежения за солнцем</h2>
+                  <p class="table-text">
+                    Умный трекер срабатывает при снижении эффективности системы,
+                    находя себе оптимальный угол и выключается обратно. Так мы
+                    повышаем производительность на 50% с помощью
+                    интеллектуального солнечного трекера.
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <img
+                    src="/img/cleaning.png"
+                    alt="Sun Tracker"
+                    class="t_image"
+                  />
+                  <h2 class="table-h">Система очистки</h2>
+                  <p class="table-text">
+                    Система автоматически очищается чистящим средством в
+                    выделенное время, экономя время, не требуя вмешательства
+                    человека и сохраняя 25-30% производительности, от потерь
+                    через загрязнение.
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="quote-block">
+        <table>
+          <tbody>
+            <tr>
+              <td style="width: 100%">
+                <p class="quote_text" style="margin-left: 15%">
+                  "Солнечная энергия - это единственная энергия, которая может
+                  дать миру электричество бесплатно."
+                </p>
+                <footer class="quote_foot">&mdash; Elon Musk</footer>
+              </td>
+              <td>
+                <img
+                  class="quote_img"
+                  src="/img/elon_musk.jpeg"
+                  alt="Elon Musk"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="advantages" id="advantages">
+      <div class="block-head">
+        <h1 class="adv-h1">Почему Future Solar Power Plant?</h1>
+      </div>
+      <div class="table-container">
+        <table cellspacing="0" cellpadding="0" border="0" class="table1">
+          <tbody>
+            <tr>
+              <td>
+                <div class="advantage">
+                  <img
+                    class="adv_img"
+                    src="/img/система очистки.png"
+                    alt="Advantage1"
+                  />
+                  <h2 class="table-h">Система очистки</h2>
+                  <p class="table-text">
+                    Солнечные панели самостоятельно чистятся, обеспечивая
+                    высокую эффективность и долговечность.
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div class="advantage">
+                  <img
+                    class="adv_img"
+                    src="/img/умная система контроля.png"
+                    alt="Advantage1"
+                  />
+                  <h2 class="table-h">Умная система контроля солнца</h2>
+                  <p class="table-text">
+                    Умная система контроля солнца оптимизирует работу панелей в
+                    любых условиях освещения.
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div class="advantage">
+                  <img
+                    class="adv_img"
+                    src="/img/отражение солнца.png"
+                    alt="Advantage1"
+                  />
+                  <h2 class="table-h">Отражение солнца</h2>
+                  <p class="table-text">
+                    За счет отражения солнечных лучей водой, эффективность
+                    солнечная панель производит на 15% больше энергии.
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="advantage">
+                  <img
+                    class="adv_img"
+                    src="/img/испарение воды.png"
+                    alt="Advantage1"
+                  />
+                  <h2 class="table-h">Защита от испарения воды</h2>
+                  <p class="table-text">
+                    Солнечные панели помогают снизить испарение воды с
+                    поверхности земли благодаря своей конструкции, сохраняя
+                    влагу и поддерживая более стабильные условия в окружающей
+                    среде.
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div class="advantage">
+                  <img
+                    class="adv_img"
+                    src="/img/чистая энергия.png"
+                    alt="Advantage1"
+                  />
+                  <h2 class="table-h">Чистая энергия</h2>
+                  <p class="table-text">
+                    Эффективное использование солнечной энергии предоставляет
+                    возможность получать электроэнергию без загрязнения
+                    окружающей среды.
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div class="advantage">
+                  <img
+                    class="adv_img"
+                    src="/img/не требует земли.png"
+                    alt="Advantage1"
+                  />
+                  <h2 class="table-h">Не требует земли</h2>
+                  <p class="table-text">
+                    Солнечные панели не требуют больших земельных участков для
+                    установки, что делает их удобным решением для разных
+                    местоположений.
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="numbers">
+      <!-- CO2 statistics -->
+      <div class="statistics" id="triggerCO2" style="height: 1px">
+        <div class="number" id="CO2Number">0</div>
+        <p class="description">Предотвращено тонн CO2</p>
+      </div>
+
+      <!-- Electricity generation statistics -->
+      <div class="statistics" id="triggerElectricity" style="height: 1px">
+        <div class="number" id="electricityNumber">0</div>
+        <p class="description">Сгенерировано Квт электричества</p>
+      </div>
+    </div>
+
+    <div class="background-main" id="research">
+      <div>
+        <div class="block-head"">
+        <h1 class="research_h1">Исследования:</h1>
+      </div>
+      <div class="block-head">
+        <h2 class="research_h2">
+          1. Увеличение производства путем<br />
+          отражения солнечных лучей
+        </h2>
+      </div>
+      <div class="research_main">
+        <div>
+          <p class="research_exp">
+            Отражение от поверхности воды увеличивает эффективность солнечной
+            панели. Чтобы выяснить, насколько эффективно производится
+            электроэнергия, мы провели эксперимент, в котором сравнили две
+            солнечные панели под разными углами утром, днем ​​и вечером. На
+            первой панели не было отражающей воды, а на второй она была.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img class="research_img" src="/img/research1.png" alt="Research 1" />
+      </div>
+      <div class="block-head">
+        <h2 class="research_h2">
+          2. Увеличение производства путем<br />
+          умного солнечного трекера
+        </h2>
+      </div>
+      <div class="research_main">
+        <div>
+          <p class="research_exp">
+            Мы провели эксперимент в котором мы записывали данные солнечного
+            элемента, а именно напряжение и мощность, в течение одного дня с
+            7:30 до 18:30. По результатам эксперимента выяснилось, что обычные
+            панели не могут производить электроэнергию в среднем от 1 до 3 часов
+            утром и на закате, а благодаря наблюдению и правильному углу
+            солнечного трекера солнечные лучи могут легко обеспечить хорошую
+            производительность, и эффект будет более значительным в больших
+            масштабах. Эта система управления увеличивает общее производство
+            энергии в течение дня до 50% при использовании больших панелей.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img class="research_img" src="/img/research2.png" alt="Research 1" />
+      </div>
+      <div class="block-head">
+        <h2 class="research_h2">
+          3. Увеличение производства<br />
+          системой очистки
+        </h2>
+      </div>
+      <div class="research_main">
+        <div>
+          <p class="research_exp">
+            И одной из важных частей этого проекта является автономная система
+            очистки, которая с помощью специального механизма очищает солнечную
+            панель в определенное время, а также охлаждает ее, предотвращая тем
+            самым снижение эффективности на 25-30%.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img
+          class="research_img"
+          src="/img/cleaning_system.png"
+          alt="Research 1"
+        />
+      </div>
+    </div>
+    <div class="quote-block">
+      <table class="quote_table">
+        <tbody>
+          <tr>
+            <td>
+              <p class="quote_text">
+                "Человечество знает, что загрязнение воздуха плохо для здоровья
+                и изменения климата, <br />
+                но теперь мы знаем, что это плохо и для солнечной энергетики."
+              </p>
+              <footer class="quote_foot">&mdash; Michael Howard Bergin</footer>
+            </td>
+            <td>
+              <img
+                class="quote_img"
+                src="/img/howard_begin.jpeg"
+                alt="Elon Musk"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="mvp">
+      <div>
+        <div class="block-head">
+          <h1 class="research_h1">Создание MVP продукта</h1>
+        </div>
+      </div>
+      <div>
+        <p class="research_exp">
+          MVP проекта создан с использованием металлоконструкций, управляемых
+          двумя исполнительными механизмами и датчиками наблюдения за солнцем.
+        </p>
+      </div>
+      <div class="gallery-container">
+        <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+        <div class="gallery">
+          <img src="/img/mvp-1.jpg" alt="Image 1" />
+          <img src="/img/mvp-2.jpg" alt="Image 2" />
+          <img src="/img/mvp-3.jpg" alt="Image 3" />
+          <img src="/img/mvp-4.jpg" alt="Image 4" />
+          <img src="/img/mvp-5.jpg" alt="Image 5" />
+          <img src="/img/mvp-6.jpg" alt="Image 6" />
+          <img src="/img/mvp-7.jpg" alt="Image 7" />
+          <img src="/img/mvp-8.jpg" alt="Image 8" />
+          <img src="/img/mvp-9.jpg" alt="Image 9" />
+          <img src="/img/mvp-10.jpg" alt="Image 10" />
+          <img src="/img/mvp-11.jpg" alt="Image 11" />
+          <img src="/img/mvp-12.jpg" alt="Image 12" />
+        </div>
+        <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </div>
+    <div class="result_video">
+      <div class="block-head">
+        <h1 class="research1">Только взгляните на результат!</h1>
+      </div>
+      <div class="video-container">
+        <iframe
+          class="video"
+          src="https://www.youtube-nocookie.com/embed/sGZo7msPVbg?si=d-HgDhcpq7iOsirU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="btn_order">
+        <button class="order_link" onclick="window.location.href='#order_link'">
+          Заказать продукт
+        </button>
+      </div>
+    </div>
+    <div style="background-image: url('/img/back_achievements.jpeg')">
+      <div>
+        <div class="block-head">
+          <h1 class="research_h1" id="gallery">Достижения</h1>
+        </div>
+        <div class="gallery-container">
+          <button class="prev-btn1" onclick="prevSlide1()">&#10094;</button>
+          <div class="achievements">
+            <img src="/img/achievements-1.png" alt="Image 1" />
+            <img src="/img/achievements-2.png" alt="Image 2" />
+            <img src="/img/achievements-3.png" alt="Image 3" />
+            <img src="/img/achievements-4.png" alt="Image 4" />
+            <img src="/img/achievements-5.png" alt="Image 5" />
+            <img src="/img/achievements-6.png" alt="Image 6" />
+            <img src="/img/achievements-7.png" alt="Image 7" />
+            <img src="/img/achievements-8.png" alt="Image 8" />
+            <img src="/img/achievements-9.png" alt="Image 9" />
+            <img src="/img/achievements-10.png" alt="Image 10" />
+          </div>
+          <button class="next-btn1" onclick="nextSlide1()">&#10095;</button>
+        </div>
+      </div>
+    </div>
+    <div class="full-width-form" id="order_link">
+      <div class="form-container">
+        <h2>Заказать</h2>
+        <form action="https://formspree.io/f/xbjnqblp" method="POST">
+          <div class="input-group">
+            <label for="name">Имя:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Введите имя"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Введите email"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="phone">Номер телефона:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Введите номер телефона"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="product">Модуль:</label>
+            <select id="product" name="product" required>
+              <option value="" disabled selected>Выберите систему</option>
+              <option value="Floating system">
+                Floating System / Плавучая система
+              </option>
+              <option value="Smart solar tracker">
+                Smart solar tracker / Умный солнечный трекер
+              </option>
+              <option value="Cleaning system">
+                Cleaning system / Система очистки
+              </option>
+              <option value="Combined">
+                Combined systems / Объединенные системы
+              </option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="quantity">Количество:</label>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              placeholder="Введите количество"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="message">Сообщение:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Добавьте дополнительную информацию"
+            ></textarea>
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="full-width-form" id="contact">
+      <div class="form-container">
+        <h2>Свяжитесь с нами</h2>
+        <form action="https://formspree.io/f/mwkgazpn" method="POST">
+          <div class="input-group">
+            <input type="text" name="name" placeholder="Имя" required />
+          </div>
+          <div class="input-group">
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="input-group">
+            <textarea
+              name="message"
+              placeholder="Сообщение"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <ul class="social-links">
+        <li>
+          <a href="https://t.me/Solaarkzbot" target="_blank"
+            ><img src="/img/telegram.png" alt="Telegram" /></a
+          ><span>Ссылка на Telegram бот</span>
+        </li>
+        <li>
+          <a href="https://wa.me/+77779304465" target="_blank"
+            ><img src="/img/whatsapp.png" alt="WhatsApp" /></a
+          ><span>Напишите нам</span>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</html>
