@@ -1,0 +1,1294 @@
+/* Общие стили */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  margin-top: 4%;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+/* Общие стили */
+/* Стили кнопки меню */
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+.menu-toggle span {
+  background: #000;
+  display: block;
+  height: 3px;
+  margin: 5px 0;
+  transition: 0.4s;
+  width: 30px;
+}
+
+/* Иконка закрытого меню */
+.menu-toggle span:nth-child(1),
+.menu-toggle span:nth-child(3) {
+  width: 100%;
+}
+
+/* Иконка открытого меню */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 10px;
+}
+
+.nav-links {
+  display: none;
+  position: absolute;
+  top: 100%; /* Расположение меню под шапкой */
+  left: 0;
+  background-color: #f9f8f1; /* Фон меню */
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятости над контентом */
+}
+
+/* Отображение меню при активации */
+.nav-links.active {
+  display: block;
+}
+
+.nav-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #f9f8f1;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12%;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 5%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 30px; /* Добавленный размер текста */
+}
+
+.nav-link:hover {
+  color: #ffd700;
+}
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-links.active .nav {
+  flex-direction: column;
+}
+
+.contact,
+.order_link {
+  background-color: #0b3721;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: normal;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.contact:hover,
+.order_link:hover {
+  background-color: #ff6659;
+}
+.grad1 {
+  max-width: 100%;
+  background: linear-gradient(to right, #f1f2e8 64%, #d5ca6d 100%);
+  height: 250px;
+  max-height: 100%;
+}
+.content {
+  max-width: 100%;
+  margin: 0;
+  margin-left: 15%;
+}
+
+.content h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.content p {
+  width: 600px;
+  max-width: 100%;
+  font-size: 23px;
+  line-height: 1.6;
+  font-weight: 200;
+  color: gray;
+}
+.background-main {
+  background-color: #f9f8f1;
+  max-width: 100%;
+}
+.model {
+  display: flex;
+}
+.sun {
+  width: 220px;
+  height: 220px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: -17%;
+  margin-right: 2%;
+  margin-left: auto;
+  animation: sunRays 5s linear infinite;
+}
+@keyframes sunRays {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}
+.model_3d {
+  margin-top: -17%;
+  margin-left: auto;
+  height: 360px;
+  max-height: 100%;
+  width: 510px;
+  max-width: 100%;
+  animation: modelSunlight 5s linear infinite;
+}
+@keyframes modelSunlight {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.5);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.video {
+  width: 1150px;
+  max-width: 100%;
+  height: 650px;
+  max-height: 100%;
+}
+.btn_order {
+  align-items: center;
+  margin: 1% 45%;
+}
+.block-head {
+  text-align: center;
+  font-size: 40px;
+  margin: 2% 0 1%;
+}
+.block-head-h1 {
+  margin-top: 2%;
+}
+.table-container {
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+  text-align: center; /* Центрируем содержимое таблицы */
+}
+
+.table1 {
+  width: 80%;
+  margin: 0 auto; /* Центрируем таблицу */
+  table-layout: fixed;
+}
+
+.table1 td {
+  padding: 4%;
+  width: 33.33%;
+}
+
+.t_image {
+  width: 400px;
+  max-width: 100%;
+  height: 300px;
+  max-height: 100%;
+  border-radius: 20px; /* Добавляем округление к изображениям */
+}
+.table-h {
+  font-size: 22px;
+  margin-top: 2%;
+}
+.table-text {
+  font-size: 18px;
+  font-weight: 200;
+  margin-top: 10px;
+  text-align: justify;
+  line-height: 1.2;
+  color: gray;
+  text-align: center;
+}
+.quote-block {
+  background-color: #061f13;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.quote_text {
+  color: #f1f2e8;
+  font-style: italic;
+  font-size: 30px;
+  margin-bottom: 50px;
+  max-width: 100%;
+  padding: 0;
+  margin-left: 20%;
+}
+
+.quote_foot {
+  padding: 0;
+  color: white;
+  margin: 1% 20%;
+  font-size: 1.3em;
+}
+
+.quote_img {
+  display: none;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  margin-left: 70%;
+  border-radius: 30px;
+}
+
+.quote_table {
+  max-width: 100%;
+}
+.advantage {
+  height: 230px;
+  width: 400px;
+  max-height: 100%;
+  max-width: 100%;
+  background-color: #f9f8f1;
+  border-radius: 20px;
+}
+.adv-h1 {
+  margin-top: 2%;
+}
+.adv_img {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 2%;
+  margin-right: auto;
+}
+.research_h2 {
+  font-size: 30px;
+  align-items: center;
+}
+.research_exp {
+  font-size: 26px;
+  margin: 1% 9%;
+}
+.research_img {
+  display: block; /* Делаем изображения блочными элементами */
+  margin: 0 auto; /* Центрируем изображения по горизонтали */
+  max-width: 80%; /* Устанавливаем максимальную ширину изображений */
+  height: auto; /* Поддерживаем пропорции изображений */
+}
+
+.gallery-container {
+  position: relative;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.gallery {
+  display: flex;
+  background-image: url("img/back_achievements.jpeg");
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.prev-btn {
+  left: 10px; /* Позиция кнопки "назад" слева */
+}
+
+.next-btn {
+  right: 10px; /* Позиция кнопки "вперед" справа */
+}
+.result_video {
+  max-width: 100%;
+  background: linear-gradient(
+    to bottom,
+    #f7f0f0 0%,
+    /* 0% */ #f7cd1f 30%,
+    /* 30% */ #eac42e 30%,
+    /* 30% */ #eac42e 50%,
+    /* 50% */ #918d8d 50%,
+    /* 50% */ #918d8d 100% /* 100% */
+  );
+}
+
+.achievements {
+  display: flex;
+  background-image: url("img/back_achievements.jpeg");
+}
+
+.achievements img {
+  max-width: 100%;
+  height: auto;
+}
+
+.prev-btn1,
+.next-btn1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.prev-btn1 {
+  left: 10px; /* Позиция кнопки "назад" слева */
+}
+
+.next-btn1 {
+  right: 10px; /* Позиция кнопки "вперед" справа */
+}
+
+/* Styles for the form */
+.full-width-form {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.input-group {
+  margin-bottom: 30px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="tel"],
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="email"]:focus,
+.input-group input[type="tel"]:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  border-color: #007bff;
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+.input-group button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #0056b3;
+}
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.form-container button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+/* Styles for the contact form */
+#contact {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+.input-group button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #0056b3;
+}
+
+.numbers {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  max-width: 100%;
+  height: 200px;
+}
+
+.statistics {
+  margin: 0 auto; /* Добавляем небольшие отступы по бокам */
+  margin-bottom: 20px; /* Устанавливаем отступ между блоками */
+}
+
+.number {
+  font-size: 100px; /* Увеличиваем размер цифр */
+  font-weight: bold;
+  color: transparent; /* Делаем цвет текста прозрачным */
+  background: linear-gradient(to right, blue, red);
+  -webkit-background-clip: text; /* Используем фоновый градиент как цвет текста */
+  background-clip: text; /* Обеспечиваем кросс-браузерную совместимость */
+  text-align: center;
+}
+
+.description {
+  font-size: 40px; /* Уменьшаем размер текста объяснения */
+  color: #666;
+  margin-top: 10px; /* Увеличиваем отступ сверху */
+}
+.statistics {
+  text-align: center;
+  margin: 0 auto; /* Добавляем небольшие отступы по бокам */
+  margin-bottom: 20px; /* Устанавливаем отступ между блоками */
+
+  /* Адаптация для мобильных устройств */
+  @media (max-width: 768px) {
+    margin: 0; /* Убираем горизонтальные отступы */
+    margin-bottom: 10px; /* Уменьшаем отступ между блоками */
+  }
+}
+
+.site-footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.social-links a img {
+  width: 40px; /* Увеличиваем размер изображения */
+  height: 40px; /* Увеличиваем размер изображения */
+  border-radius: 50%; /* Делаем изображение круглым */
+}
+
+.social-links a {
+  display: inline-block;
+}
+
+.social-links span {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px; /* Увеличиваем размер шрифта для подписи */
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.number {
+  font-size: 100px; /* Увеличиваем размер цифр */
+  font-weight: bold;
+  color: transparent; /* Делаем цвет текста прозрачным */
+  background: linear-gradient(to right, blue, red);
+  -webkit-background-clip: text; /* Используем фоновый градиент как цвет текста */
+  background-clip: text; /* Обеспечиваем кросс-браузерную совместимость */
+  text-align: center;
+  /* Адаптация для мобильных устройств */
+  @media (max-width: 768px) {
+    font-size: 60px; /* Уменьшаем размер цифр для мобильных устройств */
+  }
+}
+.numbers {
+  margin-bottom: 100px;
+
+  /* Адаптация для мобильных устройств */
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.description {
+  font-size: 40px; /* Уменьшаем размер текста объяснения */
+  color: #666;
+  margin-top: 10px; /* Увеличиваем отступ сверху */
+
+  /* Адаптация для мобильных устройств */
+  @media (max-width: 768px) {
+    font-size: 20px; /* Уменьшаем размер текста для мобильных устройств */
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .grad1 {
+    margin-top: 6.8%;
+  }
+  .quote_img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1226px) {
+  .grad1 {
+    margin-top: 5.3%;
+  }
+  .quote_img {
+    display: none;
+  }
+  .quote_text {
+    margin-left: 12%;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .quote_img {
+    display: none;
+  }
+  .quote_text {
+    font-size: 22px;
+    max-width: 70%;
+    margin-left: 10%;
+  }
+  .footer {
+    margin: 0 auto;
+    width: max-content;
+  }
+}
+@media only screen and (max-width: 2560px) {
+  .sun {
+    width: 220px;
+    height: 220px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: -10%;
+    margin-right: 2%;
+    margin-left: auto;
+    animation: sunRays 5s linear infinite;
+  }
+  .model_3d {
+    margin-top: -10%;
+    margin-right: 5%;
+  }
+  .quote_text {
+    width: 100%;
+  }
+  .quote_img {
+    margin-left: 180%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .model {
+    display: none;
+  }
+  .grad1 {
+    margin-top: 10%;
+  }
+  .table1 td {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .advantage {
+    margin: 0 auto;
+  }
+  .quote-block {
+    background-color: #061f13;
+    padding: 1%;
+    display: flex;
+    flex-direction: column; /* Располагаем элементы блока в столбец */
+    align-items: center; /* Центрируем элементы по горизонтали */
+  }
+
+  /* Стили для текста цитаты */
+  .quote_text {
+    width: 100%;
+    color: #f1f2e8;
+    font-style: italic;
+    font-size: 20px; /* Уменьшаем размер текста для мобильных устройств */
+    text-align: center; /* Выравниваем текст по центру */
+    padding: 0 10px; /* Уменьшаем внутренние отступы */
+    text-align: justify;
+    margin: 0;
+  }
+
+  /* Стили для подписи цитаты */
+
+  .quote_foot {
+    color: white;
+    font-size: 1em; /* Уменьшаем размер шрифта */
+    margin: 10px 0; /* Уменьшаем отступы по вертикали */
+    text-align: center; /* Выравниваем текст по центру */
+  }
+
+  /* Стили для изображения */
+  .quote_img {
+    display: none; /* Скрываем изображение на мобильных устройствах */
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav-links {
+    top: 8%; /* Увеличение отступа сверху */
+    height: 92%; /* Увеличение высоты меню */
+    transition: transform 0.3s ease; /* Добавление плавности анимации */
+    transform: translateY(-100%); /* Скрытие меню за пределы экрана */
+    position: fixed; /* Фиксированная позиция для меню */
+    width: 100%;
+    overflow-y: auto; /* Добавление вертикальной прокрутки */
+  }
+
+  .nav-links.active {
+    transform: translateY(0); /* Показывание меню при активации */
+  }
+
+  .nav {
+    flex-direction: column; /* Отображение пунктов меню вертикально */
+    align-items: center; /* Центрирование пунктов меню */
+  }
+
+  .nav-item {
+    margin: 10px 0; /* Увеличение отступов между пунктами */
+  }
+}
+/* Mobile Styles */
+@media only screen and (max-width: 375px) {
+  /* Общие стили */
+  .quote-block {
+    background-color: #061f13;
+    padding: 1%;
+    display: flex;
+    flex-direction: column; /* Располагаем элементы блока в столбец */
+    align-items: center; /* Центрируем элементы по горизонтали */
+  }
+
+  /* Стили для текста цитаты */
+  .quote_text {
+    width: 100%;
+    color: #f1f2e8;
+    font-style: italic;
+    font-size: 20px; /* Уменьшаем размер текста для мобильных устройств */
+    text-align: center; /* Выравниваем текст по центру */
+    padding: 0 10px; /* Уменьшаем внутренние отступы */
+    text-align: justify;
+    margin: 0 auto;
+  }
+
+  /* Стили для подписи цитаты */
+
+  .quote_foot {
+    color: white;
+    font-size: 1em; /* Уменьшаем размер шрифта */
+    margin: 10px 0; /* Уменьшаем отступы по вертикали */
+    text-align: center; /* Выравниваем текст по центру */
+  }
+
+  /* Стили для изображения */
+  .quote_img {
+    display: none; /* Скрываем изображение на мобильных устройствах */
+  }
+
+  /* Размер экрана iPhone */
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f9f8f1;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 999;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: #ffd700;
+  }
+
+  .contact,
+  .order_link {
+    background-color: #0b3721;
+    color: #ffffff;
+    border-radius: 2px;
+    padding: 2.5px 5px;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    justify-content: center;
+    align-items: center; /* Optional: vertically center the content */
+  }
+
+  .contact:hover,
+  .order_link:hover {
+    background-color: #ff6659;
+  }
+
+  .grad1 {
+    height: 100px; /* Уменьшаем высоту градиента */
+  }
+
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 80px; /* Уменьшаем отступ сверху */
+  }
+
+  .content h1 {
+    font-size: 20px; /* Уменьшаем размер заголовков */
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .content p {
+    font-size: 14px; /* Уменьшаем размер текста */
+    line-height: 1.5;
+    color: #555;
+  }
+
+  .model .sun,
+  .model .model_3d {
+    width: 80px; /* Уменьшаем размер солнца и 3D модели */
+    height: 80px;
+    margin-top: -10%; /* Уменьшаем отступ сверху */
+  }
+
+  .video {
+    width: 90%;
+    height: auto;
+  }
+
+  .btn_order {
+    margin: 20px auto;
+  }
+
+  .block-head {
+    font-size: 20px; /* Уменьшаем размер заголовка */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .table1 td {
+    padding: 8px;
+  }
+
+  .t_image {
+    width: 100%;
+    height: auto;
+  }
+
+  .table-h {
+    font-size: 14px; /* Уменьшаем размер текста заголовков таблицы */
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .advantage {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .adv_img {
+    width: 12px; /* Уменьшаем размер иконок преимуществ */
+    height: 12px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .table1 td {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px; /* Добавляем отступы вокруг ячеек */
+  }
+}
+
+/* Стили для мобильных устройств (iPhone и аналогичные) */
+@media only screen and (max-width: 375px) {
+  .model {
+    display: none;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f9f8f1;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    z-index: 999;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: #ffd700;
+  }
+
+  .contact,
+  .order_link {
+    background-color: #0b3721;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: normal;
+    transition: background-color 0.3s, color 0.3s;
+    justify-content: center;
+    align-items: center; /* Optional: vertically center the content */
+  }
+
+  .contact:hover,
+  .order_link:hover {
+    background-color: #ff6659;
+  }
+
+  .grad1 {
+    height: 100px; /* Уменьшаем высоту градиента */
+  }
+
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 80px; /* Уменьшаем отступ сверху */
+  }
+
+  .content h1 {
+    font-size: 20px; /* Уменьшаем размер заголовков */
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .content p {
+    font-size: 14px; /* Уменьшаем размер текста */
+    line-height: 1.5;
+    color: #555;
+  }
+
+  .model .sun,
+  .model .model_3d {
+    width: 80px; /* Уменьшаем размер солнца и 3D модели */
+    height: 80px;
+    margin-top: -10%; /* Уменьшаем отступ сверху */
+  }
+
+  .video {
+    width: 90%;
+    height: auto;
+  }
+
+  .btn_order {
+    margin: 20px auto;
+  }
+
+  .block-head {
+    font-size: 20px; /* Уменьшаем размер заголовка */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .table1 td {
+    padding: 8px;
+  }
+
+  .t_image {
+    width: 100%;
+    height: auto;
+  }
+
+  .table-h {
+    font-size: 14px; /* Уменьшаем размер текста заголовков таблицы */
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .advantage {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .adv_img {
+    width: 12px; /* Уменьшаем размер иконок преимуществ */
+    height: 12px;
+    margin-bottom: 5px;
+  }
+}
+/* Стили для мобильных устройств (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  /* Общие стили */
+  .quote-block {
+    background-color: #061f13;
+    padding: 1%;
+    display: flex;
+    flex-direction: column; /* Располагаем элементы блока в столбец */
+    align-items: center; /* Центрируем элементы по горизонтали */
+  }
+
+  /* Стили для текста цитаты */
+  .quote_text {
+    width: 100%;
+    color: #f1f2e8;
+    font-style: italic;
+    font-size: 20px; /* Уменьшаем размер текста для мобильных устройств */
+    text-align: center; /* Выравниваем текст по центру */
+    padding: 0 10px; /* Уменьшаем внутренние отступы */
+    text-align: justify;
+    margin: 0 auto;
+  }
+
+  /* Стили для подписи цитаты */
+
+  .quote_foot {
+    color: white;
+    font-size: 1em; /* Уменьшаем размер шрифта */
+    margin: 10px 0; /* Уменьшаем отступы по вертикали */
+    text-align: center; /* Выравниваем текст по центру */
+  }
+
+  /* Стили для изображения */
+  .quote_img {
+    display: none; /* Скрываем изображение на мобильных устройствах */
+  }
+
+  /* Размер экрана iPhone */
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f9f8f1;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 999;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: #ffd700;
+  }
+
+  .contact,
+  .order_link {
+    background-color: #0b3721;
+    color: #ffffff;
+    border-radius: 2px;
+    padding: 2.5px 5px;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    align-self: center;
+    justify-content: center;
+    align-items: center; /* Optional: vertically center the content */
+  }
+
+  .contact:hover,
+  .order_link:hover {
+    background-color: #ff6659;
+  }
+
+  .grad1 {
+    height: 100px; /* Уменьшаем высоту градиента */
+  }
+
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 80px; /* Уменьшаем отступ сверху */
+  }
+
+  .content h1 {
+    font-size: 20px; /* Уменьшаем размер заголовков */
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .content p {
+    font-size: 14px; /* Уменьшаем размер текста */
+    line-height: 1.5;
+    color: #555;
+  }
+
+  .model .sun,
+  .model .model_3d {
+    width: 80px; /* Уменьшаем размер солнца и 3D модели */
+    height: 80px;
+    margin-top: -10%; /* Уменьшаем отступ сверху */
+  }
+
+  .video {
+    width: 90%;
+    height: auto;
+  }
+
+  .btn_order {
+    margin: 20px auto;
+  }
+
+  .block-head {
+    font-size: 20px; /* Уменьшаем размер заголовка */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .table1 td {
+    padding: 8px;
+  }
+
+  .t_image {
+    width: 100%;
+    height: auto;
+  }
+
+  .table-h {
+    font-size: 14px; /* Уменьшаем размер текста заголовков таблицы */
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .advantage {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .adv_img {
+    width: 12px; /* Уменьшаем размер иконок преимуществ */
+    height: 12px;
+    margin-bottom: 5px;
+  }
+  .research_exp {
+    font-size: 20px;
+  }
+  .research_h2 {
+    font-size: 26px;
+  }
+}
